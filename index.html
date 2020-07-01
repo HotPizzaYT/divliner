@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      background-color: #0000ff;
+      color: #ffffff;
+      }
+     button {
+       background-color: #000000;
+       color: #ffffff;
+     }
+     #gs {
+        width: 100%;
+        height: 500px;
+      }
+    </style>
+    <script>
+function xmlCon(){
+document.getElementById("gs").value = "<div>" + document.getElementById("gs").value.replace(/\n/g, "</div>\n<div>") + "</div>";
+}
+    </script>
+    <title>DivLiner</title>
+    <meta name="description" content="Turn your long paragraphs into HTML!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body>
+    <h1>DivLiner</h1>
+    <textarea id="gs"></textarea>
+    <br>
+    <button onclick="xmlCon()">Create</button>
+  </body>
+</html>
